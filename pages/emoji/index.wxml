@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="wrapper">
+        <image bindtap="random1" class="random" src="../../static/random.svg"></image>
+        <swiper bindchange="change1" circular="{{true}}" class="swiper" current="{{current1}}" displayMultipleItems="{{3}}" vertical="{{true}}">
+            <swiper-item class="swiper-item" wx:for="{{emojis}}" wx:key="index">
+                <image class="img" src="{{item.img}}"></image>
+            </swiper-item>
+        </swiper>
+        <view class="plus">+</view>
+        <swiper bindchange="change2" circular="{{true}}" class="swiper" current="{{current2}}" displayMultipleItems="{{3}}" vertical="{{true}}">
+            <swiper-item class="swiper-item" wx:for="{{emojis}}" wx:key="index">
+                <image class="img" src="{{item.img}}"></image>
+            </swiper-item>
+        </swiper>
+        <image bindtap="random2" class="random" src="../../static/random.svg"></image>
+    </view>
+    <view class="error" wx:if="{{showError}}">这对组合还在设计中<view class="_br"></view>试试其他组合吧~</view>
+    <image class="result" onerror="reverse" src="{{resultUrl}}"></image>
+    <view bindtap="saveEmoji" class="save-btn" style="color: #f53f3f;" wx:if="{{!showError}}">保存emoji</view>
+    <button bindtap="onShareAppMessage" class="weui-btn" openType="share" style="margin-top: 10px; color: #06ae56;" type="default">分享给朋友</button>
+    <h6 style="margin-top: 10px;">觉得有趣的话就录屏发抖音多多安利吧～</h6>
+    <view bindtap="gzh" style="margin: 10px 0 10px 0; font-size: 14px;"> 地址：<text style="color: #f53f3f;">xiaoerbolg.cn</text>, 下载更多源码就到小二源码博客 </view>
+    <div style="height: 100rpx;">
+        <ad unit-id="adunit-8e509190606cd228"></ad>
+    </div>
+</view>

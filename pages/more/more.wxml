@@ -1,0 +1,53 @@
+<view>
+    <view>
+        <ad unitId="adunit-8f852f6b8fb762d7"></ad>
+        <view class="tabs">
+            <navigator appId="{{tab.appid}}" class="tabs-item" extraData="{{tab.extra}}" openType="{{tab.appid=='wx100'?'switchTab':'navigate'}}" path="{{tab.path}}" target="{{tab.appid=='wx100'||tab.appid=='wx101'?'self':'miniProgram'}}" url="{{tab.path}}" version="{{tab.version}}" wx:if="{{tab.valid==1}}" wx:for="{{tabs}}" wx:for-index="idx" wx:for-item="tab" wx:key="idx">
+                <form class="tabs-item-form">
+                    <button class="tabs-item-button">
+                        <view class="logo">
+                            <image class="avatar" src="{{tab.imgUrl}}"></image>
+                        </view>
+                        <view class="content">
+                            <view class="content-title">
+                                <view class="content-text">{{tab.text}}</view>
+                                <view class="content-tag-gold" wx:if="{{tab.tag&&tab.tag=='New'}}">{{tab.tag}}</view>
+                                <view class="content-tag-red" wx:if="{{tab.tag&&tab.tag!='New'}}">{{tab.tag}}</view>
+                            </view>
+                            <view class="content-summary">{{tab.slogan}}</view>
+                        </view>
+                    </button>
+                </form>
+            </navigator>
+        </view>
+        <view class="ad-container data-v-400080d0">
+            <ad adTheme="white" adType="video" unitId="adunit-5a9019223de8a0b7"></ad>
+        </view>
+        <view class="bottom-links">
+            <view class="recommend" style="width: auto;">
+                <button bindtap="share" class="cu-btn round action-btn btn-primary" id="btn-save" openType="share">
+                    <view class="recommend-text">
+                        <image class="share" src="/static/share.png"></image> 推荐给好友 </view>
+                </button>
+            </view>
+        </view>
+    </view>
+    <view class="modal bottom-share-menus" wx:if="{{showShareMenu}}">
+        <view catchtap="onHideShareMenu" class="modal-mask"></view>
+        <view class="modal-body">
+            <view class="modal-content">
+                <button class="menu-item" openType="share">
+                    <image class="menu-icon" src="/static/share-weixin.png"></image>
+                    <view class="menu-text">微信</view>
+                </button>
+                <button bindtap="onShareMoments" class="menu-item">
+                    <image class="menu-icon" src="/static/share-moments.png"></image>
+                    <view class="menu-text">分享图</view>
+                </button>
+            </view>
+            <view class="modal-footer">
+                <button bindtap="onHideShareMenu" class="cancel-btn" style="background-color: #fff;">取消</button>
+            </view>
+        </view>
+    </view>
+</view>

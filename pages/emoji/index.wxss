@@ -1,0 +1,78 @@
+.container {
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 80rpx 0;
+}
+
+.container .title {
+    color: #000;
+    font-size: 70rpx;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container .wrapper {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container .wrapper .random {
+    filter: opacity(.3);
+    height: 48rpx;
+    margin: 0 24rpx;
+    width: 48rpx;
+}
+
+.container .wrapper .plus {
+    color: #000;
+    font-size: 94rpx;
+    margin: 0 24rpx 26rpx;
+}
+
+.container .wrapper .swiper {
+    height: 348rpx;
+    margin: 0 24rpx;
+    width: 100rpx;
+}
+
+.container .wrapper .swiper .swiper-item .img {
+    height: 96rpx;
+    width: 96rpx;
+}
+
+.container .result {
+    height: 512rpx;
+    margin-top: 60rpx;
+    width: 512rpx;
+}
+
+.error {
+    color: #777;
+    margin-top: 100rpx;
+}
+
+.save-btn {
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: #555;
+    letter-spacing: 1px;
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+    padding: 4px 10px;
+}
+
+.rem {
+    bottom: 60rpx;
+    color: #666;
+    margin-bottom: 40rpx;
+    margin-top: 90rpx;
+}

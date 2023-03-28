@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "最新文章",
+    "backgroundColor": "#FFF",
+    "backgroundColorBottom": "#FFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "usingComponents": {}
+}

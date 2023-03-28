@@ -1,0 +1,284 @@
+.loading-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    position: fixed;
+    width: 100%;
+}
+
+.bounceLoading {
+    position: relative;
+}
+
+button,image,input,label,navigator,scroll-view,swiper,textarea,view {
+    box-sizing: initial!important;
+}
+
+.bounceLoading .bounceLoading-child {
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: Bounce;
+    animation-timing-function: ease-in-out;
+    background-color: #fc4b51;
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: center;
+}
+
+@-webkit-keyframes Bounce {
+    0%,to {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes Bounce {
+    0%,to {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+}
+
+page {
+    background: #f1f1f1;
+}
+
+.tabs-item-form {
+    width: 100%;
+}
+
+.tabs-item-button,.tabs-item-form {
+    display: flex;
+    height: 100%;
+}
+
+.tabs-item-button {
+    width: 640rpx;
+}
+
+.loading-tip {
+    color: #979797;
+    font-size: 30rpx;
+    margin-top: 10%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.avatar-header-bg {
+    left: 0;
+    position: absolute;
+    top: -120rpx;
+    width: 100%;
+}
+
+.tabs {
+    background: #f1f1f1;
+    padding: 40rpx 30rpx;
+}
+
+.tabs-item {
+    align-items: center;
+    background: #fff;
+    border-radius: 8rpx;
+    display: flex;
+    height: 120rpx;
+    margin-bottom: 30rpx;
+    padding: 20rpx;
+}
+
+.logo {
+    border-radius: 96rpx;
+    flex: 0 0 96rpx;
+    height: 96rpx;
+    margin-left: 10rpx;
+    margin-right: 46rpx;
+    padding-top: 10rpx;
+}
+
+.logo image {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+.content-title {
+    align-items: center;
+    color: #474747;
+    display: flex;
+    font-size: 36rpx;
+    margin-bottom: 12rpx;
+    overflow: hidden;
+    padding-bottom: 2rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content-title .content-text {
+    border: 2rpx solid #fff;
+    display: inline-block;
+    margin-right: 12rpx;
+}
+
+.content-summary {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #767676;
+    display: -webkit-box;
+    font-size: 28rpx;
+    margin-bottom: 12rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content-tag-gold,.content-tag-red {
+    background-color: rgba(255,147,12,.1);
+    border-radius: 20rpx;
+    color: #ff930c;
+    display: inline-block;
+    font-size: 24rpx;
+    margin: 2rpx 0;
+    padding: 0 16rpx;
+}
+
+.bottom-links {
+    align-items: center;
+    color: #1976d2;
+    font-size: 24rpx;
+    justify-content: center;
+    margin-bottom: 30rpx;
+    margin-top: 20rpx;
+    padding-bottom: 50rpx;
+    width: 100%;
+}
+
+.bottom-links,.money {
+    display: flex;
+}
+
+.money {
+    border-right: 1rpx solid #999;
+    justify-content: flex-end;
+}
+
+.money-text {
+    padding-right: 40rpx;
+}
+
+.recommend {
+    vertical-align: middle;
+    width: 50%;
+}
+
+.recommend-text {
+    padding-left: 40rpx;
+}
+
+.share {
+    height: 25rpx;
+    margin-right: 2rpx;
+    vertical-align: middle;
+    width: 25rpx;
+}
+
+button {
+    background: none!important;
+    border: 0;
+    color: #1976d2;
+    display: inherit;
+    font-size: 24rpx;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+button::after {
+    border: none;
+}
+
+.modal {
+    bottom: 0;
+    height: 360rpx;
+    z-index: 100;
+}
+
+.modal,.modal-mask {
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.modal-mask {
+    background-color: rgba(0,0,0,.6);
+    height: 100vh;
+    top: 0;
+    z-index: 9998;
+}
+
+.modal-body {
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #f7f7f7;
+    height: 260rpx;
+    justify-content: center;
+    padding: 0 90rpx;
+    position: relative;
+}
+
+.modal-content,.modal-content .menu-item {
+    align-items: center;
+    display: flex;
+}
+
+.modal-content .menu-item {
+    flex: 1;
+    flex-direction: column;
+}
+
+.modal-content .menu-item .menu-icon {
+    height: 100rpx;
+    margin-bottom: 28rpx;
+    width: 100rpx;
+}
+
+.modal-content .menu-item .menu-text {
+    color: #767676;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.modal .modal-footer {
+    height: 100rpx;
+    position: relative;
+}
+
+.modal .modal-footer form {
+    display: flex;
+}
+
+.modal .cancel-btn {
+    border: 0;
+    border-radius: 0;
+    color: #3b3b3b;
+    font-size: 32rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    width: 750rpx;
+}
