@@ -1,0 +1,31 @@
+{
+    "pages": [
+        "pages/emoji/index",
+        "pages/more/more",
+        "pages/webview/webview",
+        "pages/web/web",
+        "pages/maker/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f3f3f3",
+        "navigationBarTitleText": "小二源码博客测试",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/emoji/index",
+                "text": "emoji表情包合成器",
+                "iconPath": "static/meowtle.png",
+                "selectedIconPath": "static/meowtle.png"
+            },
+            {
+                "pagePath": "pages/maker/index",
+                "text": "更多好玩",
+                "iconPath": "static/default.png",
+                "selectedIconPath": "static/default.png"
+            }
+        ]
+    }
+}
